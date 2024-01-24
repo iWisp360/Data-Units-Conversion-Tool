@@ -1,179 +1,179 @@
 def b2kb():
-    b = int(input("Expresa un número en Bytes: "))
+    b = int(input("Express a number in Bytes: "))
     if (type(b) != int):
-        print ("Solo admito números enteros de bytes")
+        print ("Only integers are allowed")
         exit(1)
     kb = (b / 1024)
 
-    print("\n" + str(b) + " bytes serían " + str(kb) + " Kb :)")
+    print("\n" + str(b) + " bytes are " + str(kb) + " Kb :)")
 
 def b2mb():
-    b = int(input("Expresa un número en Bytes: "))
+    b = int(input("Express a number in Bytes: "))
     if (type(b) != int):
-        print ("Solo admito números enteros de bytes")
+        print ("Only integers are allowed")
         exit(1)
     mb = (b / 1048576)
 
-    print("\n" + str(b) + " bytes serían " + str(mb) + " Mb :)")
+    print("\n" + str(b) + " bytes are " + str(mb) + " Mb :)")
 
 def b2gb():
-    b = int(input("Expresa un número en Bytes: "))
+    b = int(input("Express a number in Bytes: "))
     if (type(b) != int):
-        print ("Solo admito números enteros de bytes")
+        print ("Only integers are allowed")
         exit(1)
     gb = (b / 1073741824)
 
-    print("\n" + str(b) + " bytes serían " + str(gb) + " Gb :)")
+    print("\n" + str(b) + " bytes are " + str(gb) + " Gb :)")
 
 def b2tb():
-    b = int(input("Expresa un número en Bytes: "))
+    b = int(input("Express a number in Bytes: "))
     if (type(b) != int):
-        print ("Solo admito números enteros de bytes")
+        print ("Only integers are allowed")
         exit(1)
     tb = (b / 1099511627776)
 
-    print("\n" + str(b) + " bytes serían " + str(tb) + " Tb :)")
+    print("\n" + str(b) + " bytes are " + str(tb) + " Tb :)")
 
 def kb2b():
-    b = int(input("Expresa un número en Kilobytes: "))
+    b = int(input("Express a number in Kilobytes: "))
     if (type(b) != int):
-        print ("Solo admito números enteros de kilobytes")
+        print ("Only integers are allowed")
         exit(1)
     kb = (b * 1024)
 
-    print("\n" + str(b) + " kilobytes serían " + str(kb) + " bytes :)")
+    print("\n" + str(b) + " kilobytes are " + str(kb) + " bytes :)")
 
 def kb2mb():
-    kb = int(input("Expresa un número en Kilobytes: "))
+    kb = int(input("Express a number in Kilobytes: "))
     if (type(kb) != int):
-        print ("Solo admito números enteros de kilobytes")
+        print ("Only integers are allowed")
         exit(1)
     mb = (kb / 1024)
 
-    print("\n" + str(kb) + " kilobytes serían " + str(mb) + " Mb :)")
+    print("\n" + str(kb) + " kilobytes are " + str(mb) + " Mb :)")
 
 def kb2gb():
-    kb = int(input("Expresa un número en Kilobytes: "))
+    kb = int(input("Express a number in Kilobytes: "))
     if (type(kb) != int):
-        print ("Solo admito números enteros de bytes")
+        print ("Only integers are allowed")
         exit(1)
     gb = (kb / 1048576)
 
-    print("\n" + str(kb) + " kilobytes serían " + str(gb) + " Gb :)")
+    print("\n" + str(kb) + " kilobytes are " + str(gb) + " Gb :)")
 
 def kb2tb():
-    kb = int(input("Expresa un número en Kilobytes: "))
+    kb = int(input("Express a number in Kilobytes: "))
     if (type(kb) != int):
-        print ("Solo admito números enteros de bytes")
+        print ("Only integers are allowed")
         exit(1)
     tb = (kb / 1073741824)
 
-    print("\n" + str(kb) + " kilobytes serían " + str(tb) + " Tb :)")
+    print("\n" + str(kb) + " kilobytes are " + str(tb) + " Tb :)")
 
 def mb2kb():
-    mb = int(input("Expresa un número en megabytes: "))
+    mb = int(input("Express a number in megabytes: "))
     if (type(mb) != int):
-        print ("Solo admito números enteros de megabytes")
+        print ("Only integers are allowed")
         exit(1)
     kb = (mb * 1024)
 
-    print("\n" + str(mb) + " megabytes serían " + str(kb) + " Kb :)")
+    print("\n" + str(mb) + " megabytes are " + str(kb) + " Kb :)")
 
 def mb2b():
-    mb = int(input("Expresa un número en megabytes: "))
+    mb = int(input("Express a number in megabytes: "))
     if (type(mb) != int):
-        print ("Solo admito números enteros de megabytes")
+        print ("Only integers are allowed")
         exit(1)
     b = (mb * 1048576)
 
-    print("\n" + str(mb) + " megabytes serían " + str(b) + " bytes :)")
+    print("\n" + str(mb) + " megabytes are " + str(b) + " bytes :)")
 
 def mb2gb():
-    mb = int(input("Expresa un número en megabytes: "))
+    mb = int(input("Express a number in megabytes: "))
     if (type(b) != int):
-        print ("Solo admito números enteros de megabytes")
+        print ("Only integers are allowed")
         exit(1)
     gb = (mb / 1024)
 
-    print("\n" + str(b) + " megabytes serían " + str(gb) + " Gb :)")
+    print("\n" + str(b) + " megabytes are " + str(gb) + " Gb :)")
 
 def mb2tb():
-    mb = int(input("Expresa un número en megabytes: "))
+    mb = int(input("Express a number in megabytes: "))
     if (type(mb) != int):
-        print ("Solo admito números enteros de megabytes")
+        print ("Only integers are allowed")
         exit(1)
     tb = (mb / 1048576)
 
-    print("\n" + str(mb) + " megabytes serían " + str(tb) + " Tb :)")
+    print("\n" + str(mb) + " megabytes are " + str(tb) + " Tb :)")
 
 def gb2kb():
-    gb = int(input("Expresa un número en Gigabytes: "))
+    gb = int(input("Express a number in Gigabytes: "))
     if (type(gb) != int):
-        print ("Solo admito números enteros de gigabytes")
+        print ("Only integers are allowed")
         exit(1)
     kb = (gb * 1048576)
 
-    print("\n" + str(gb) + " gigabytes serían " + str(kb) + " Kb :)")
+    print("\n" + str(gb) + " gigabytes are " + str(kb) + " Kb :)")
 
 def gb2mb():
-    gb = int(input("Expresa un número en Gigabytes: "))
+    gb = int(input("Express a number in Gigabytes: "))
     if (type(gb) != int):
-        print ("Solo admito números enteros de gigabytes")
+        print ("Only integers are allowed")
         exit(1)
     mb = (gb * 1024)
 
-    print("\n" + str(gb) + " gigabytes serían " + str(mb) + " Mb :)")
+    print("\n" + str(gb) + " gigabytes are " + str(mb) + " Mb :)")
 
 def gb2b():
-    b = int(input("Expresa un número en Gigabytes: "))
+    b = int(input("Express a number in Gigabytes: "))
     if (type(b) != int):
-        print ("Solo admito números enteros de gigabytes")
+        print ("Only integers are allowed")
         exit(1)
     gb = (b * 1073741824)
 
-    print("\n" + str(b) + " gigabytes serían " + str(gb) + " bytes :)")
+    print("\n" + str(b) + " gigabytes are " + str(gb) + " bytes :)")
 
 def gb2tb():
-    gb = int(input("Expresa un número en Gigabytes: "))
+    gb = int(input("Express a number in Gigabytes: "))
     if (type(gb) != int):
-        print ("Solo admito números enteros de gigabytes")
+        print ("Only integers are allowed")
         exit(1)
     tb = (gb / 1024)
 
-    print("\n" + str(gb) + " gigabytes serían " + str(tb) + " Tb :)")
+    print("\n" + str(gb) + " gigabytes are " + str(tb) + " Tb :)")
 
 def tb2kb():
-    tb = int(input("Expresa un número en Terabytes: "))
+    tb = int(input("Express a number in Terabytes: "))
     if (type(tb) != int):
-        print ("Solo admito números enteros de terabytes")
+        print ("Only integers are allowed")
         exit(1)
     kb = (tb * 1073741824)
 
-    print("\n" + str(tb) + " Terabytes serían " + str(kb) + " Kb :)")
+    print("\n" + str(tb) + " Terabytes are " + str(kb) + " Kb :)")
 
 def tb2mb():
-    tb = int(input("Expresa un número en Terabytes: "))
+    tb = int(input("Express a number in Terabytes: "))
     if (type(tb) != int):
-        print ("Solo admito números enteros de terabytes")
+        print ("Only integers are allowed")
         exit(1)
     mb = (tb * 1048576)
 
-    print("\n" + str(tb) + " terabytes serían " + str(mb) + " Mb :)")
+    print("\n" + str(tb) + " terabytes are " + str(mb) + " Mb :)")
 
 def tb2gb():
-    tb = int(input("Expresa un número en Terabytes: "))
+    tb = int(input("Express a number in Terabytes: "))
     if (type(tb) != int):
-        print ("Solo admito números enteros de terabytes")
+        print ("Only integers are allowed")
         exit(1)
     gb = (tb * 1024)
 
-    print("\n" + str(tb) + " Terabytes serían " + str(gb) + " Gb :)")
+    print("\n" + str(tb) + " Terabytes are " + str(gb) + " Gb :)")
 
 def tb2b():
-    tb = int(input("Expresa un número en Terabytes: "))
+    tb = int(input("Express a number in Terabytes: "))
     if (type(tb) != int):
-        print ("Solo admito números enteros de terabytes")
+        print ("Only integers are allowed")
         exit(1)
     tb = (tb * 1099511627776)
 
-    print("\n" + str(tb) + " Terabytes serían " + str(b) + " bytes :)")
+    print("\n" + str(tb) + " Terabytes are " + str(b) + " bytes :)")

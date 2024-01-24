@@ -3,7 +3,7 @@ import sys
 
 x = None
 
-x = input("En qué unidad expresarás tu número?(B, Kb, Mb, Gb, Tb)\n")
+x = input("In what unit will you express your number?(B, Kb, Mb, Gb, Tb)\n")
     
 if (x != "B" or x != "b" or x != "kb" or x != "Kb" or x != "mb" or x != "Mb" or x != "gb" or x != "Gb" or x != "tb" or x != "Tb"): # Aquí se chequeará si x tiene el valor de B, Kb, Mb, Gb, Tb, b, kb, mb, gb o tb.
     while (x != "B" or x != "b" or x != "kb" or x != "Kb" or x != "mb" or x != "Mb" or x != "gb" or x != "Gb" or x != "tb" or x != "Tb"):    
@@ -12,7 +12,7 @@ if (x != "B" or x != "b" or x != "kb" or x != "Kb" or x != "mb" or x != "Mb" or 
         if (x != "B" or x != "b" or x != "kb" or x != "Kb" or x != "mb" or x != "Mb" or x != "gb" or x != "Gb" or x != "tb" or x != "Tb"):
             x = input("Expresa una unidad de datos digitales(B, Kb, Mb, Gb, Tb)\n")
 
-y = input("A qué unidad deseas convertir tu número?\n")
+y = input("To which unit do you want to convert your number?\n")
 
 if (y != "B" or y != "b" or y != "kb" or y != "Kb" or y != "mb" or y != "Mb" or y != "gb" or y != "Gb" or y != "tb" or y != "Tb"): # Aquí se chequeará si y tiene el valor de B, Kb, Mb, Gb, Tb, b, kb, mb, gb o tb.
     while (y != "B" or y != "b" or y != "kb" or y != "Kb" or y != "mb" or y != "Mb" or y != "gb" or y != "Gb" or y != "tb" or y != "Tb"):    
@@ -21,12 +21,12 @@ if (y != "B" or y != "b" or y != "kb" or y != "Kb" or y != "mb" or y != "Mb" or 
         if (y != "B" or y != "b" or y != "kb" or y != "Kb" or y != "mb" or y != "Mb" or y != "gb" or y != "Gb" or y != "tb" or y != "Tb"):
             y = input("Expresa una unidad de datos digitales(B, Kb, Mb, Gb, Tb)\n")
 
-# la variable x y la variable y serán input para llamar una función u otra del módulo formulas
+# vars x and y will be used to call the conversion functions in the formulas module
 
-# Ahora vendrán un numeral de condicionales que llamarán a la función de conversión dependiendo de qué input haya recibido y y x
+# Below there are conditionals that will use the correct conversion function depending on your input
 
 if (x == y):
-    sys.exit("Reinicia el programa, no tiene sentido convertir una misma unidad xD")
+    sys.exit("Restart the program, converting 2 same units doesn't make sense")
 
 #b2units
 if (x == "b" or x == "B"): 
