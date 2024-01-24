@@ -5,21 +5,21 @@ x = None
 
 x = input("In what unit will you express your number?(B, Kb, Mb, Gb, Tb)\n")
     
-if (x != "B" or x != "b" or x != "kb" or x != "Kb" or x != "mb" or x != "Mb" or x != "gb" or x != "Gb" or x != "tb" or x != "Tb"): # Aquí se chequeará si x tiene el valor de B, Kb, Mb, Gb, Tb, b, kb, mb, gb o tb.
+if (x != "B" or x != "b" or x != "kb" or x != "Kb" or x != "mb" or x != "Mb" or x != "gb" or x != "Gb" or x != "tb" or x != "Tb"):
     while (x != "B" or x != "b" or x != "kb" or x != "Kb" or x != "mb" or x != "Mb" or x != "gb" or x != "Gb" or x != "tb" or x != "Tb"):    
         if (x == "B" or x == "b" or x == "kb" or x == "Kb" or x == "mb" or x == "Mb" or x == "gb" or x == "Gb" or x == "tb" or x == "Tb"):
             break
         if (x != "B" or x != "b" or x != "kb" or x != "Kb" or x != "mb" or x != "Mb" or x != "gb" or x != "Gb" or x != "tb" or x != "Tb"):
-            x = input("Expresa una unidad de datos digitales(B, Kb, Mb, Gb, Tb)\n")
+            x = input("Type a Data Unit(B, Kb, Mb, Gb, Tb)\n")
 
 y = input("To which unit do you want to convert your number?\n")
 
-if (y != "B" or y != "b" or y != "kb" or y != "Kb" or y != "mb" or y != "Mb" or y != "gb" or y != "Gb" or y != "tb" or y != "Tb"): # Aquí se chequeará si y tiene el valor de B, Kb, Mb, Gb, Tb, b, kb, mb, gb o tb.
+if (y != "B" or y != "b" or y != "kb" or y != "Kb" or y != "mb" or y != "Mb" or y != "gb" or y != "Gb" or y != "tb" or y != "Tb"):
     while (y != "B" or y != "b" or y != "kb" or y != "Kb" or y != "mb" or y != "Mb" or y != "gb" or y != "Gb" or y != "tb" or y != "Tb"):    
         if (y == "B" or y == "b" or y == "kb" or y == "Kb" or y == "mb" or y == "Mb" or y == "gb" or y == "Gb" or y == "tb" or y == "Tb"):
             break
         if (y != "B" or y != "b" or y != "kb" or y != "Kb" or y != "mb" or y != "Mb" or y != "gb" or y != "Gb" or y != "tb" or y != "Tb"):
-            y = input("Expresa una unidad de datos digitales(B, Kb, Mb, Gb, Tb)\n")
+            y = input("Type a Data Unit(B, Kb, Mb, Gb, Tb)\n")
 
 # vars x and y will be used to call the conversion functions in the formulas module
 
