@@ -90,12 +90,12 @@ def mb2b():
 
 def mb2gb():
     mb = int(input("Express a number in megabytes: "))
-    if (type(b) != int):
+    if (type(mb) != int):
         print ("Only integers are allowed")
         exit(1)
     gb = (mb / 1024)
 
-    print("\n" + str(b) + " megabytes are " + str(gb) + " Gb :)")
+    print("\n" + str(mb) + " megabytes are " + str(gb) + " Gb :)")
 
 def mb2tb():
     mb = int(input("Express a number in megabytes: "))
