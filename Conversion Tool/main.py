@@ -1,105 +1,97 @@
 import formulas
 import sys
 
-x = None # Source Unit
-y = None # Conversion Unit
+def input_processor():
+    completed = 0
 
-while (y != "b" or y != "kb" or y != "mb" or y != "gb" or y != "tb"): 
+    Data_Units = ["b", "kb", "mb", "gb", "tb"]
 
     x = input("In what unit will you express your number?(B, Kb, Mb, Gb, Tb)\n").lower()
 
     y = input("To which unit do you want to convert your number?\n").lower()
-
-# vars x and y will be used to call the conversion functions in the formulas module
-
-# Below there are conditionals that will use the correct conversion function depending on your input
-
-    if (x == y):
-        sys.exit("Restart the program, converting 2 same units doesn't make sense")
-
-# b2units
-    if (x == "b"): 
-        if (y == "kb"):
+        # b2units
+    if (x == Data_Units[0]): 
+        if (y == Data_Units[1]):
             formulas.b2kb()
-            exit(0)
-    if (x == "b"): 
-        if (y == "mb"):
+            completed = 1
+        elif (y == Data_Units[2]):
             formulas.b2mb()
-            exit(0)
-    if (x == "b"):
-        if (y == "gb"):
+            completed = 1
+        elif (y == Data_Units[3]):
             formulas.b2gb()
-            exit(0)
-    if (x == "b"):
-        if (y == "tb"):
+            completed = 1
+        elif (y == Data_Units[4]):
             formulas.b2tb()
-            exit(0)
-# kb2units
-    if (x == "kb"): 
-        if (y == "b"):
+            completed = 1
+    # kb2units
+    if (x == Data_Units[1]): 
+        if (y == Data_Units[0]):
             formulas.kb2b()
-            exit(0)
-    if (x == "kb"): 
-        if (y == "mb"):
+            completed = 1
+        elif (y == Data_Units[2]):
             formulas.kb2mb()
-            exit(0)
-    if (x == "kb"):
-        if (y == "gb"):
+            completed = 1
+        elif (y == Data_Units[3]):
             formulas.kb2gb()
-            exit(0)
-    if (x == "kb"):
-        if (y == "tb"):
+            completed = 1
+        elif (y == Data_Units[4]):
             formulas.kb2tb()
-            exit(0)
-# mb2units
-    if (x == "mb"): 
-        if (y == "kb"):
+            completed = 1
+    # mb2units
+    if (x == Data_Units[2]): 
+        if (y == Data_Units[1]):
             formulas.mb2kb()
-            exit(0)
-    if (x == "mb"): 
-        if (y == "b"):
+            completed = 1
+        elif (y == Data_Units[0]):
             formulas.mb2b()
-            exit(0)
-    if (x == "mb"):
-        if (y == "gb"):
+            completed = 1
+        elif (y == Data_Units[3]):
             formulas.mb2gb()
-            exit(0)
-    if (x == "mb"):
-        if (y == "tb"):
+            completed = 1
+        elif (y == Data_Units[4]):
             formulas.mb2tb()
-            exit(0)
-# gb2units
-    if (x == "gb"): 
-        if (y == "kb"):
+            completed = 1
+    # gb2units
+    if (x == Data_Units[3]): 
+        if (y == Data_Units[1]):
             formulas.gb2kb()
-            exit(0)
-    if (x == "gb"): 
-        if (y == "mb"):
+            completed = 1
+        elif (y == Data_Units[2]):
             formulas.gb2mb()
-            exit(0)
-    if (x == "gb"):
-        if (y == "b"):
+            completed = 1
+        elif (y == Data_Units[0]):
             formulas.gb2b()
-            exit(0)
-    if (x == "gb"):
-        if (y == "tb"):
+            completed = 1
+        elif (y == Data_Units[4]):
             formulas.gb2tb()
-            exit(0)
-# tb2units
-    if (x == "tb"): 
-        if (y == "kb"):
+            completed = 1
+    # tb2units
+    if (x == Data_Units[4]): 
+        if (y == Data_Units[1]):
             formulas.tb2kb()
-            exit(0)
-    if (x == "tb"): 
-        if (y == "mb"):
+            completed = 1
+        elif (y == Data_Units[2]):
             formulas.tb2mb()
-            exit(0)
-    if (x == "tb"):
-        if (y == "gb"):
+            completed = 1
+        elif (y == Data_Units[3]):
             formulas.tb2gb()
-            exit(0)
-    if (x == "tb"):
-        if (y == "b"):
+            completed = 1
+        elif (y == Data_Units[0]):
             formulas.tb2b()
-            exit(0)
-    print("Enter a valid input for source and/or conversion unit\n")   
+            completed = 1
+
+    if (completed == 1):
+        exit(0)
+    if (x == "" and y == ""):
+        print("You didn't type anything ._.\n")
+        input_processor()
+    if (all(x != list_data for list_data in Data_Units) or all(y != list_data for list_data in Data_Units)):
+        print("Enter a valid input for source and/or conversion unit\n")
+        input_processor()
+    if (x == y):
+        print ("Converting 2 same units doesn't make sense\n")
+        input_processor()
+
+input_processor()
+
+exit (0)
